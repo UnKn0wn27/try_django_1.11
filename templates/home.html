@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>My dream</h1>
+<p>I will become a great {% verbatim %}{{developer}}{% endverbatim %}!</p>
+<p>
+  {%for some_item in some_list%}
+    {%if some_item|divisibleby:"2"%}
+      {{some_item}}
+    {%endif%}
+  {%endfor%}
+</p>
+{% endblock %}
